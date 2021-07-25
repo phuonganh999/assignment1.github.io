@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title> BOOTSTRAP </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- icon links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+}
+
+.footer {
+   position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #001b19;
+   color: white;
+   text-align: center;
+   padding: 30px;
+}
+
+.fa {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 5px;
+  border-radius: 50%;
+}
+
+/*social media style codes */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+}
+
+
+</style>
+</head>
+
+<body>
+   
+  <!- NAVBAR code starts here -> 
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#001b19">
+
+  <!- Brand/logo ->
+  <a class="navbar-brand" href="index.html"> 
+    <img src="img/logo-01.png" width="67" height="50" style="padding-left: 15px;"></a>
+  
+  <!- Links ->
+  <ul class="navbar-nav ml-auto" style="padding-right: 30px">
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="about-us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="gallery-test.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray; padding-right: 20px" class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+    <!- My search ->
+    <li>
+      <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+      <button class="btn btn-dark" type="submit">Search</button>
+      </form>
+    </li>
+   </ul>
+</nav>
+
+<!-- My Carousel starts here -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- Carousel 1 -->
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/w1.1.jpg" height="800">
+      <div class="carousel-caption" style="padding-bottom: 50px;">
+        <h1>Mi Casa</h1>
+        <p>Make your Wedding a wonderful story!</p>
+      </div>   
+    </div>
+
+    <!-- Carousel 2 -->
+
+    <div class="carousel-item">
+      <img src="img/w3.1.jpg" height="800">
+      <div class="carousel-caption" style="padding-bottom: 50px">
+        <h1>Mi Casa</h1>
+        <p>Make your Wedding a wonderful story!</p>
+      </div>   
+    </div>
+
+    <!-- Carousel 3 -->
+
+    <div class="carousel-item">
+      <img src="img/w2.1.jpg" height="800">
+      <div class="carousel-caption" style="padding-bottom: 50px">
+        <h1>Mi Casa</h1>
+        <p>Make your Wedding a wonderful story!</p>
+      </div>   
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- My carousel code ends here -->
+
+
+<!-- My new section ABOUT US 1 starts here -->
+
+<section style="background-color:#001b19">
+
+  <h2 style="text-align: center; padding-bottom: 50px; padding-top: 50px;color: LightGray"> ABOUT US </h2>
+
+  <div class="container">   <!-- my container tag -->
+    <div class="row">   <!-- my first row -->
+
+      <div class="col">   <!-- my first column -->
+        <img style="padding-bottom:100px; padding-left: 50px; padding-right: 30px" src="img/w6.jpg" width="550" height="380">
+      </div>
+
+      <div class="col">   <!-- my second column -->
+        <p style="color: LightGray; padding-right: 50px; padding-left: 30px"> Our goal is bold and simple; we want to tell your wedding story through compelling images that transcend wedding photography.<br><br> We believe that wedding photography does not have to be safe and boring. <br><br> We do not want to just give you the photos, we want to give you works of art that will blow your mind, that communicate the essence of who you are, that tell stories beyond what you see, and that move complete strangers to stop and stare. </p>
+      </div>
+    </div>
+</section>
+
+
+
+<section style="background-color: #663d00">
+
+  <div class="container">   <!-- my container tag -->
+    <div class="row">   <!-- my second row -->
+
+      <div class="col 2" style="padding-left: 50px; padding-right: 10px">   <!-- my first column -->
+        <img style="padding-bottom:30px; padding-top: 100px;" src="img/p1.jpg" height="550" width="300">
+        <p style="color: LightGray; padding-bottom:80px"> I'm Jessica, an east coast wedding planner and designer. My career started in 2010 on the west coast where I learned the ins and outs on how to create epic, adventurous and sometimes off the grid weddings. I take great pride in the relationships I build with not only the vendors I work with but the couple's that trust me with their wedding day! </p>
+      </div>
+
+      <div class="col 2" style="padding-right: 30px; padding-left: 40px;">   <!-- my second column -->
+        <img style="padding-bottom:30px; padding-top: 100px" src="img/p2.jpg" height="550" width="300">
+        <p style="color: LightGray; padding-bottom:80px"> I'm Tiffany. I specialize in romantic and adventurous wedding photography. I love connecting with couples who love the landscape and want to include it in their day, whether that's by the ocean somewhere in Acadia, or on top of a mountain in western Maine. I've been shooting weddings for seven years all around Italy with incredible couples. </p>
+      </div>
+
+      <div class="col 2" style="padding-right: 40px">   <!-- my third column -->
+        <img style="padding-bottom:30px; padding-top: 100px" src="img/p3.jpg" height="550" width="300">
+        <p style="color: LightGray; padding-bottom:80px"> I'm Rachel. With an emphasis on local and seasonal blooms, I started of the Field Floral Design to help create an experience for clients and their guests. My design offers unique, organic, and timeless floral pieces and I am constantly inspired by travel, nature and interior design. I love the range of designs that I get to create for my couples! </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+ <!-- my footer is here -->
+
+
+<section>
+
+<div class="footer">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  <p>Copyright 2021. All rights reserved.</p>
+</div>
+</section>
+</body>
+</html>
