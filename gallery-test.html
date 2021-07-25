@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title> BOOTSTRAP </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- icon links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+}
+
+.footer {
+   position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #001b19;
+   color: white;
+   text-align: center;
+   padding: 30px;
+}
+
+.fa {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 5px;
+  border-radius: 50%;
+}
+
+/*social media style codes */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+}
+
+
+.container1 {
+  width: 800px;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: auto;
+}
+
+.container1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container1 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container1 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container1 img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+.column {
+  float: inherit;
+  height: 50%;
+  width: 31%;
+  margin-bottom: 30px;
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  height: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+  margin:0px;
+  padding: 0px;
+}
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+   
+  <!- NAVBAR code starts here -> 
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#001b19">
+
+  <!- Brand/logo ->
+  <a class="navbar-brand" href="index.html"> 
+    <img src="img/logo-01.png" width="67" height="50" style="padding-left: 15px;"></a>
+  
+  <!- Links ->
+  <ul class="navbar-nav ml-auto" style="padding-right: 30px">
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="about-us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray" class="nav-link" href="gallery-test.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a style="color:LightGray; padding-right: 20px" class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+    <!- My search ->
+    <li>
+      <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+      <button1 class="btn btn-dark" type="submit">Search</button1>
+      </form>
+    </li>
+  </ul>
+</nav>
+
+
+<section style="background-color: #663d00">
+  <!-- Header -->
+  <div class="header">
+    <h2 style="text-align: center; padding-bottom: 30px; padding-top: 120px;color: LightGray">OUR GALLERY</h2>
+  </div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/a1.jpg" style="width:100%">
+    <img src="img/a11.jpg" style="width:100%">
+    <img src="img/a3.jpg" style="width:100%">
+    <img src="img/a4.jpg" style="width:100%">
+    <img src="img/a5.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/a6.jpg" style="width:100%">
+    <img src="img/a7.jpg" style="width:100%">
+    <img src="img/a8.jpg" style="width:100%">
+    <img src="img/a9.jpg" style="width:100%">
+    <img src="img/a15.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/a2.jpg" style="width:100%">
+    <img src="img/a12.jpg" style="width:100%">
+    <img src="img/a13.jpg" style="width:100%">
+    <img src="img/a16.jpg" style="width:100%">
+    <img src="img/a14.jpg" style="width:100%">
+    <img src="img/a10.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/a17.jpg" style="width:100%">
+    <img src="img/a18.jpg" style="width:100%">
+    <img src="img/a20.jpg" style="width:100%">
+    <img src="img/a19.jpg" style="width:100%">
+    <img src="img/a21.jpg" style="width:100%">
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- my footer is here -->
+<section>
+<div class="footer">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  <p>Copyright 2021. All rights reserved.</p>
+</div>
+</section>
+
+</body>
+</html>
